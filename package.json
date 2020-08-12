@@ -1,0 +1,18 @@
+{
+  "name": "kudapara.co.zw",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "tailwindcss": "^1.1.4",
+    "vue-mailchimp-email-signup-form": "^1.1.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "@tailwindcss/custom-forms": "^0.2.1"
+  }
+}

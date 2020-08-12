@@ -1,0 +1,648 @@
+<template>
+  <Layout>
+    <div class="h-screen pb-14 bg-right bg-cover">
+      <!--Nav-->
+      <div class="w-full container mx-auto p-6">
+        <div class="w-full flex items-center justify-between text-base md:text-lg">
+          <a
+            class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+            <img src="logo.svg" class="h-16" />
+          </a>
+          <div class="flex justify-end">
+            <a href="#about-us" class="hover:text-teal-600 hover-underline mr-8">About Us</a>
+
+            <a href="#how-it-works" class="hover:text-teal-600 hover-underline mr-8">How it works</a>
+
+            <a href="#programs" class="hover:text-teal-600 hover-underline mr-8">Our programs</a>
+
+            <a href="#philosophy" class="hover:text-teal-600 hover-underline mr-8">Philosophy</a>
+
+            <a href="#contact" class="hover:text-teal-600 hover-underline">Contact Us</a>
+          </div>
+
+          <!-- <div class="flex justify-end content-center">		
+				<a href="#">
+					Sign in
+				</a>
+          </div>-->
+        </div>
+      </div>
+
+      <!--Main-->
+      <div
+        class="container pt-8 text-base md:text-2xl md:pt-18 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <!--Left Col-->
+        <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start">
+          <h1
+            class="my-4 text-3xl md:text-6xl text-teal-800 font-black leading-tight text-center md:text-left slide-in-bottom-h1"
+          >Possibilities Cognitive Skills Development Center</h1>
+          <p
+            class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle"
+          >We believe that cognitive skills training is about excercing the brain to think faster and learn easily.</p>
+
+          <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
+            <button class="bg-teal-600 text-white py-4 px-6">Register for an assessment</button>
+          </div>
+        </div>
+
+        <!--Right Col-->
+        <div class="w-full xl:w-2/5 py-6 overflow-y-hidden">
+          <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="fatherhood.svg" />
+        </div>
+
+        <!-- Quotes -->
+
+        <div class="bg-black text-white p-16 mt-24">
+          <h1
+            class="text-6xl font-black"
+          >"Write this down: My life is full of unlimited possibilities."</h1>
+          <div class="flex items-center max-w-3xl">
+            <div class="h-1 bg-white mr-4 flex-1">&nbsp;</div>
+            <span class="text-3xl font-bold">Pablo</span>
+          </div>
+
+          <div class="flex items-center max-w-sm mt-6">
+            <div class="h-4 w-4 bg-white rounded-full mr-2">&nbsp;</div>
+            <div class="h-4 w-4 bg-white rounded-full mr-2">&nbsp;</div>
+            <div class="h-6 w-6 bg-teal-500 border-2 border-white rounded-full mr-2">&nbsp;</div>
+            <div class="h-4 w-4 bg-white rounded-full mr-2">&nbsp;</div>
+            <div class="h-4 w-4 bg-white rounded-full">&nbsp;</div>
+            <div class="h-1 bg-white flex-1">&nbsp;</div>
+            <button
+              class="py-2 px-6 border-2 border-white font-bold text-white text-lg"
+            >next quote -></button>
+          </div>
+        </div>
+
+        <!-- About us -->
+        <div class="w-full mt-24" id="about-us">
+          <div class="flex items-center">
+            <div class="flex items-center justify-center h-24 w-24 bg-teal-200 rounded-full mr-2">
+              <svg
+                class="h-12 w-12 text-teal-500"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-6xl font-black">About Us</h3>
+            <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
+          </div>
+
+          <div class="flex items-center justify-between mt-6 border-b-4 border-black pb-16 mb-16">
+            <div class="w-1/2 pr-16">
+              <p
+                class="mb-6"
+              >We believe that cognitive skills training is about exercising the brain to think faster and learn easily.</p>
+              <p>Different children have different needs that is why our programs target the areas that need strengthening whether it be memory, auditory processing, visual processing, attention, working memory, processing speed or logic and reasoning.</p>
+            </div>
+
+            <div class="flex justify-end w-1/2">
+              <div class="md:-mt-16 px-6 py-8 bg-gray-900 text-white border-b-4 border-teal-600">
+                <div>
+                  <h3 class="font-bold text-3xl">Esther Moyo</h3>
+                  <p class="text-gray-200 text-base mb-6">Founder and CEO</p>
+                  <p
+                    class="mb-2"
+                  >Esther Moyo majored in Clinical Psychology and has been working with children since 2011.</p>
+                  <p
+                    class="mb-2"
+                  >Her experience ranges from being a Denominational Conference Children's Ministries Director, Certified Brain Trainer as well as a Student Counselor in International Schools in the Middle East.</p>
+                  <p
+                    class="mb-2"
+                  >Her passion lies in seeing possibilities in every child and adult becoming reality. She believes that the brain has neuroplasticity characteristics, therefore, the ability to learn or strengthen those areas that are deemed weak.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- How it works -->
+        <div class="flex justify-between w-full mt-16" id="how-it-works">
+          <div class="max-w-lg">
+            <h3 class="text-3xl font-bold">How it all works</h3>
+            <div class="flex flex-col items-start mt-8">
+              <div class="flex">
+                <div
+                  class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full border-2 border-teal-500 mr-4"
+                >
+                  <svg class="h-6 w-6 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <span>Register for an assessment</span>
+              </div>
+
+              <div class="h-10 w-1 bg-teal-500 ml-4 -mt-1">&nbsp;</div>
+
+              <div class="flex">
+                <div
+                  class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full border-2 border-teal-500 mr-4"
+                >
+                  <svg class="h-6 w-6 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <span>Go through our programs</span>
+              </div>
+
+              <div class="h-10 w-1 bg-teal-500 ml-4 -mt-1">&nbsp;</div>
+
+              <div class="flex">
+                <div
+                  class="flex-shrink-0 h-8 w-8 flex items-center justify-center rounded-full border-2 border-teal-500 mr-4"
+                >
+                  <svg class="h-6 w-6 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <span>
+                  Enjoy your new found abilities and
+                  continue on your path of exploring
+                  more possibilities
+                </span>
+              </div>
+            </div>
+
+            <button class="bg-teal-600 text-white py-4 px-6 mt-6">Register for an assessment</button>
+          </div>
+
+          <div class="border-4 border-black bg-teal-100 p-8 flex flex-col justify-between max-w-xl">
+            <p>Our training is Diagnostic, individual and developmental. Our trainers are qualified and experienced to deliver timely, systematic and effective interventions.</p>
+
+            <p>All our programs are research based and international.</p>
+          </div>
+        </div>
+
+        <!-- Our programs -->
+        <div class="flex justify-between w-full mt-24" id="programs">
+          <div class="max-w-2xl">
+            <h3 class="text-3xl font-bold">Our programs</h3>
+            <p
+              class="mb-4 mt-8"
+            >Reading Possibilities Programs focus on the Auditory Processing Cognitive Skill which is a fundamental literacy and reading skill. This program is suitable for all abilities.</p>
+            <p
+              class="mb-4"
+            >Our Reading programs not only assess efficiency, but also measure and increase motivation and comprehension. Clients are given choice and control to practice at their own pace with a program that uses adaptive technology in a truly meaningful way.</p>
+            <p
+              class="mb-4"
+            >These are web-based programs that build upon the foundational skills of phonics and phonemic awareness to develop silent reading fluency, comprehension (deeper understanding), and re-engaging reluctant readers.</p>
+            <p class="mb-4">
+              The training approach is diagnostic, individualised and developmental. Each person is initially assessed in
+              terms of relative strengths and possible weaknesses in a variety of skill areas, according to age and
+              standard norms.
+            </p>
+            <p>An individualised program is then applied, employing appropriately graded training material.</p>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="child-w-full bg-teal-500 py-24 mt-24 relative">
+          <div
+            class="container text-base md:text-2xl md:pt-18 px-6 mx-auto flex flex-wrap flex-col md:flex-row"
+          >
+            <div class="w-1/3 px-4">
+              <div class="border-4 border-black bg-white">
+                <div class="flex justify-between p-4">
+                  <span class="font-black">$99.99</span>
+                  <span class="text-base text-white bg-black p-2 rounded">monthly</span>
+                </div>
+
+                <p class="font-bold mt-2 mb-4 px-4">Reading Possibilities 1</p>
+
+                <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
+
+                <p class="px-4">
+                  Suitable for Kindergarten (5 years) years) through Year 6 (10 years) Covers
+                  Phonological Awareness, Phonics, Fluency, Vocabulary building and tests comprehension.
+                </p>
+
+                <div class="px-4">
+                  <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-1/3 px-4">
+              <div class="border-4 border-black bg-white">
+                <div class="flex justify-between p-4">
+                  <span class="font-black">$99.99</span>
+                  <span class="text-base text-white bg-black p-2 rounded">monthly</span>
+                </div>
+
+                <p class="font-bold mt-2 mb-4 px-4">Reading Possibilities 2</p>
+
+                <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
+
+                <p class="px-4">
+                  Also works as a booster program. Suitable for Year 6 (10 - 12 years) Focuses on
+                  development of grammar, listening skills, comprehension and word study.
+                </p>
+
+                <div class="px-4">
+                  <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-1/3 px-4">
+              <div class="border-4 border-black bg-white">
+                <div class="flex justify-between p-4">
+                  <span class="font-black">$99.99</span>
+                  <span class="text-base text-white bg-black p-2 rounded">monthly</span>
+                </div>
+
+                <p class="font-bold mt-2 mb-4 px-4">Reading Possibilities 3</p>
+
+                <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
+
+                <p class="px-4">
+                  Suitable for Year 9 (12 years and older even adults) Focuses on speed (eye
+                  movement), fluency, screening and scanning strategies, extensive reading, good for preparing
+                  Standardized tests e.g. SAT, IELTS etc.
+                </p>
+
+                <div class="px-4">
+                  <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute bottom-0 left-0 w-full -mb-8">
+            <div class="container mx-auto px-10">
+              <button
+                class="bg-pink-600 text-white py-4 px-6 border-4 border-white"
+              >Proceed to checkout</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Philosophy -->
+        <div class="w-full mt-48" id="philosophy">
+          <div class="flex items-center">
+            <div class="flex items-center justify-center h-24 w-24 bg-teal-200 rounded-full mr-2">
+              <svg class="h-12 w-12 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-6xl font-black">Philosophy</h3>
+            <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
+          </div>
+
+          <div class="flex justify-between mt-16">
+            <div>
+              <h3 class="text-3xl font-bold">Values</h3>
+              <ul class="mt-4">
+                <li class="flex items-center mb-4">
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-teal-500 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Respect
+                </li>
+                <li class="flex items-center mb-4">
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-teal-500 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Integrity
+                </li>
+                <li class="flex items-center mb-4">
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-teal-500 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Systematic Interventions
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="flex-shrink-0 h-6 w-6 text-teal-500 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Effective Interventions
+                </li>
+              </ul>
+            </div>
+
+            <div class="max-w-xl">
+              <h3 class="text-3xl font-bold">Vision</h3>
+              <p class="mb-8">
+                To develop individuals who strive to achieve their highest potential in schools, communities
+                and at home.
+              </p>
+
+              <h3 class="text-3xl font-bold">Mission</h3>
+              <p class="mb-8">
+                PCS Development Center seeks to help individuals realise their unique possibilities
+                undiscovered.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- About us -->
+        <div class="w-full mt-24" id="contact">
+          <div class="flex items-center">
+            <div class="flex items-center justify-center h-24 w-24 bg-teal-200 rounded-full mr-2">
+              <svg class="h-12 w-12 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-6xl font-black">Contact us</h3>
+            <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
+          </div>
+
+          <div class="flex justify-between mt-16">
+            <div>
+              <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Phone Number</h3>+971 555829884
+            </div>
+            <address>
+              <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Physical Address</h3>18985 69 Avenue, Surrey
+              British Columbia
+              Canada
+              V4N 5K1
+            </address>
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div
+          class="w-full flex justify-between text-gray-700 py-16 -6 text-sm text-center md:text-left fade-in border-t mt-16"
+        >
+          <a
+            class="no-underline hover:no-underline"
+            href="#"
+          >&copy; Possibilities Cognitive Skills Development Center 2020</a>
+
+          <div>
+            Designed and coded with ❤️ by
+            <a
+              href="https://progic.co"
+              target="_blank"
+              class="text-indigo-600 hover:underline"
+            >Progic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Layout>
+</template>
+
+<script>
+import Accordion from "@/components/Accordion";
+import { VueMailchimpEmailSignupForm } from "vue-mailchimp-email-signup-form";
+
+export default {
+  // <meta charset="UTF-8">
+	// <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	// <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	// <title>Possibilities Cognitive Skills Development Center</title>
+	// <meta name="description" content="">
+	// <meta name="keywords" content="">
+	
+  //   <!-- Font Awesome if you need it
+	// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	// -->
+	
+	// <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+	// <!--Replace with your tailwind.css once created-->
+
+	// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  metaInfo: {
+    title: "Possibilities Cognitive Skills Development Center",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+      { charset: "UTF-8" }
+    ],
+    link: [
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" }
+    ]
+  },
+
+  components: {
+    Accordion,
+    VueMailchimpEmailSignupForm,
+  },
+
+  data() {
+    return {
+      selectedPackages: [],
+      shownDescription: null,
+      services: ["Design", "Programming", "Consulting", "Talks", "Trainings"],
+
+      theWhys: [
+        {
+          tag: "Quality",
+          title: "Handcrafted sites & Premium quality",
+          description:
+            "We put our heart and soul into crafting the perfect site, that will be absolutely stunning to your customers. No knock offs.",
+          logoHTML: `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="text-yellow-brand w-8 h-8 absolute bottom-0 left-0 ml-16 mb-16 z-40"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>`,
+        },
+        {
+          tag: "Timely",
+          title: "Quality work delivered, on time",
+          description:
+            "Technology moves fast! So we race against time to ensure your site is ready before your competitors, all without compromising quality.",
+          logoHTML: `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="text-yellow-brand w-8 h-8 absolute bottom-0 left-0 ml-16 mb-16 z-40"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
+        },
+        {
+          tag: "Value",
+          title: "Value for your money",
+          description:
+            "Our premium pricing, premium quality. Our promise to you is that you’ll get real value for your money. We throw in a few extras, no cap.",
+          logoHTML: `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="text-yellow-brand w-8 h-8 absolute bottom-0 left-0 ml-16 mb-16 z-40"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
+        },
+      ],
+      frequentlyAskedQuestions: [
+        {
+          title: "How much do your services cost?",
+          description: `
+            It depends!
+
+            Most projects range from  USD $999  to USD $10,000 depending on the complexity and scope of the project. Usually after each project there is a monthly fee of about USD $199 for maintainance and minor updates.
+
+            Any major features to be introduced after wards will be billed as a seperate project and the amount is subject to negotiation. 
+          `,
+        },
+        {
+          title: "How much do your services cost?",
+          description: `
+            It depends!
+
+            Most projects range from  USD $999  to USD $10,000 depending on the complexity and scope of the project. Usually after each project there is a monthly fee of about USD $199 for maintainance and minor updates.
+
+            Any major features to be introduced after wards will be billed as a seperate project and the amount is subject to negotiation. 
+          `,
+        },
+      ],
+
+      plans: [
+        {
+          title: "Website Design",
+          code: "design",
+          description:
+            "Get hand crafted designs for your website. Build it yourself",
+          price: 99,
+          hostingPrice: 0,
+          features: [
+            "Access to original design assets",
+            "Maximum of 2 revisions",
+            "Get mobile and desktop variations",
+          ],
+        },
+        {
+          title: "Basic Websites",
+          code: "basic",
+          description:
+            "Static websites, useful when you are just starting out and just want to bring your brand out there",
+          price: 199,
+          hostingPrice: 9,
+          features: [
+            "5 standard Pages",
+            "Includes design of the website",
+            "Website ready in 2 weeks",
+            "Maximum of 2 revisions",
+          ],
+        },
+        {
+          title: "Rich Websites",
+          code: "rich",
+          description:
+            "Rich interactive websites that allow you to showcase your brand and manage your blog and integrate with social media",
+          price: 699,
+          isMostPopular: true,
+          hostingPrice: 29,
+          features: [
+            "Up to 10 standard Pages",
+            "Includes design of the website",
+            "Website ready in 3 weeks",
+            "Maximum of 2 revisions",
+            "Access to the code repository",
+          ],
+        },
+        {
+          title: "Web Applications",
+          code: "webapp",
+          description:
+            "Custom web applications to fulfill the business needs for your company.",
+          price: 999,
+          hostingPrice: 99,
+          features: [
+            "Agile development",
+            "Custom features",
+            "Prototype ready in 3 weeks",
+            "Access to the code repository",
+          ],
+        },
+      ],
+    };
+  },
+
+  methods: {
+    showDescriptionFor(i) {
+      this.shownDescription = i;
+    },
+
+    hideDescription() {
+      this.shownDescription = null;
+    },
+
+    toggleSelectedPackages(pkg) {
+      if (this.selectedPackages.includes(pkg)) {
+        this.selectedPackages.splice(this.selectedPackages.indexOf(pkg), 1);
+      } else {
+        this.selectedPackages.push(pkg);
+      }
+    },
+  },
+};
+</script>
+
+
+<style>		
+    /* ----------------------------------------------
+    * Generated by Animista
+    * w: http://animista.net, t: @cssanimista
+    * ---------------------------------------------- */
+    
+  .slide-in-bottom{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
+  .slide-in-bottom-h1{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .5s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .5s both}
+  .slide-in-bottom-subtitle{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .75s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .75s both}
+  .fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both}
+  .bounce-top-icons{-webkit-animation:bounce-top .9s 1s both;animation:bounce-top .9s 1s both}
+  
+  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+  @-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
+  @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+  
+  .child-w-full {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+
+  button {
+    transition: all .2s ease-in;
+  }
+
+  button:hover {
+    transform: translateY(-8px) translateX(-4px) scale(1.03);
+  }
+</style>
