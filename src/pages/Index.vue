@@ -1,33 +1,27 @@
 <template>
   <Layout>
-    <div class="h-screen pb-14 bg-right bg-cover">
-      <!--Nav-->
-      <div class="w-full container mx-auto p-6">
-        <div class="w-full flex items-center justify-between text-base md:text-lg">
-          <a
-            class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            href="#"
-          >
-            <img src="logo.svg" class="h-16" />
-          </a>
-          <div class="flex justify-end">
-            <a href="#about-us" class="hover:text-teal-600 hover-underline mr-8">About Us</a>
+    <div class="min-h-screen pb-14 bg-right bg-cover">
 
-            <a href="#how-it-works" class="hover:text-teal-600 hover-underline mr-8">How it works</a>
-
-            <a href="#programs" class="hover:text-teal-600 hover-underline mr-8">Our programs</a>
-
-            <a href="#philosophy" class="hover:text-teal-600 hover-underline mr-8">Philosophy</a>
-
-            <a href="#contact" class="hover:text-teal-600 hover-underline">Contact Us</a>
-          </div>
-
-          <!-- <div class="flex justify-end content-center">		
-				<a href="#">
-					Sign in
-				</a>
-          </div>-->
+      <div class="bg-teal-100 p-6 border-b-2 border-teal-500 text-base md:text-lg">
+      <nav class="container mx-auto flex items-center justify-between flex-wrap">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <img src="logo.svg" class="h-16" />
         </div>
+      
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="hidden md:block font-bold lg:flex-grow">
+            <a href="#about-us" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">About Us</a>
+
+            <a href="#how-it-works" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">How it works</a>
+
+            <a href="#programs" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">Our programs</a>
+
+            <a href="#philosophy" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">Philosophy</a>
+
+            <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline">Contact Us</a>
+          </div>
+        </div>
+      </nav>
       </div>
 
       <!--Main-->
