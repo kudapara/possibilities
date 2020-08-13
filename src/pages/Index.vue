@@ -29,7 +29,7 @@
         class="container pt-8 text-base md:text-2xl md:pt-18 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
       >
         <!--Left Col-->
-        <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start">
+        <div class="flex flex-col  w-full xl:w-3/5 justify-center lg:items-start">
           <h1
             class="my-4 text-3xl md:text-6xl text-teal-800 font-black leading-tight text-center md:text-left slide-in-bottom-h1"
           >Possibilities Cognitive Skills Development Center</h1>
@@ -43,12 +43,12 @@
         </div>
 
         <!--Right Col-->
-        <div class="w-full xl:w-2/5 py-6 overflow-y-hidden">
+        <div class="w-full xl:w-2/5 py-6 overflow-y-hidden bg-red -mt-16  md:mt-auto">
           <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="fatherhood.svg" />
         </div>
 
         <!-- New quotes -->
-        <div class="md:-ml-10 p-24l mt-32 flex flex-col justify-cepnter items-center w-full">
+        <div class="md:-ml-10 p-24l mt-16 md:mt-32 flex flex-col justify-cepnter items-center w-full">
           <div
             class="max-w-6xl mx-auto relative"
             x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
@@ -57,12 +57,12 @@
             <div v-for="slide in slides" :key="slide">
               <div
                 v-show="activeSlide === slide"
-                class="px-24 py-16 flex flex-col justify-center font-bold text-5xl bg-pink-500 text-white rounded-lg carousel-shell"
+                class="px-10 md:px-24 py-8 md:py-16 flex flex-col justify-center font-bold text-5xl bg-pink-500 text-white rounded-lg carousel-shell"
               >
-                <h1 class="text-6xl font-black">"{{ quotes[slide].text }}"</h1>
+                <h1 class="text-xl md:text-lg md:text-6xl font-black">"{{ quotes[slide].text }}"</h1>
                 <div class="flex items-center max-w-3xl">
                   <div class="h-1 bg-white mr-4 flex-1">&nbsp;</div>
-                  <span class="text-3xl font-bold">{{ quotes[slide].author }}</span>
+                  <span class="text-lg md:text-3xl font-bold">{{ quotes[slide].author }}</span>
                 </div>
               </div>
             </div>
@@ -70,10 +70,10 @@
             <div class="absolute inset-0 flex">
               <div class="flex items-center justify-start w-1/2">
                 <button
-                  class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 ml-8"
+                  class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-6 md:w-12 h-6 md:h-12 ml-2 md:ml-8"
                   @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1"
                 >
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-8 h-8">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-4 md:w-8 h-4 md:h-8">
                     <path
                       fill-rule="evenodd"
                       d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -84,10 +84,10 @@
               </div>
               <div class="flex items-center justify-end w-1/2">
                 <button
-                  class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 mr-8"
+                  class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-6 md:w-12 h-6 md:h-12 mr-2 md:mr-8"
                   @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1"
                 >
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-8 h-8">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-4 md:w-8 h-4 md:h-8">
                     <path
                       fill-rule="evenodd"
                       d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -116,11 +116,11 @@
         <!-- Enf of new quote -->
 
         <!-- About us -->
-        <div class="w-full mt-24" id="about-us">
+        <div class="w-full mt-12 md:mt-24" id="about-us">
           <div class="flex items-center">
-            <div class="flex items-center justify-center h-24 w-24 bg-teal-200 rounded-full mr-2">
+            <div class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2">
               <svg
-                class="h-12 w-12 text-teal-500"
+                class="w-6 h-6 md:h-12 md:w-12 text-teal-500"
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -133,19 +133,19 @@
                 />
               </svg>
             </div>
-            <h3 class="text-6xl font-black">About Us</h3>
+            <h3 class="text-lg md:text-6xl font-black">About Us</h3>
             <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
           </div>
 
-          <div class="flex items-center justify-between mt-6 border-b-4 border-black pb-16 mb-16">
-            <div class="w-1/2 pr-16">
+          <div class="flex items-center justify-between flex-wrap mt-6 border-b-4 border-black pb-16 mb-16">
+            <div class="w-full md:w-1/2 md:pr-16">
               <p
                 class="mb-6"
               >We believe that cognitive skills training is about exercising the brain to think faster and learn easily.</p>
               <p>Different children have different needs that is why our programs target the areas that need strengthening whether it be memory, auditory processing, visual processing, attention, working memory, processing speed or logic and reasoning.</p>
             </div>
 
-            <div class="flex justify-end w-1/2">
+            <div class="flex justify-end md:w-1/2 mt-8 mb:mt-0">
               <div class="md:-mt-16 px-6 py-8 bg-gray-900 text-white border-b-4 border-teal-600">
                 <div>
                   <h3 class="font-bold text-3xl">Esther Moyo</h3>
@@ -166,7 +166,7 @@
         </div>
 
         <!-- How it works -->
-        <div class="flex justify-between w-full mt-16" id="how-it-works">
+        <div class="flex justify-between flex-wrap w-full mt-16" id="how-it-works">
           <div class="max-w-lg">
             <h3 class="text-3xl font-bold">How it all works</h3>
             <div class="flex flex-col items-start mt-8">
@@ -227,7 +227,7 @@
             <button class="bg-teal-600 text-white py-4 px-6 mt-6">Register for an assessment</button>
           </div>
 
-          <div class="border-4 border-black bg-teal-100 p-8 flex flex-col justify-between max-w-xl">
+          <div class="mt-8 md:mt-0 border-4 border-black bg-teal-100 p-8 flex flex-col justify-between max-w-xl">
             <p>Our training is Diagnostic, individual and developmental. Our trainers are qualified and experienced to deliver timely, systematic and effective interventions.</p>
 
             <p>All our programs are research based and international.</p>
@@ -235,7 +235,7 @@
         </div>
 
         <!-- Our programs -->
-        <div class="flex justify-between w-full mt-24" id="programs">
+        <div class="flex justify-between w-full mt-12 md:mt-24" id="programs">
           <div class="max-w-2xl">
             <h3 class="text-3xl font-bold">Our programs</h3>
             <p
@@ -259,68 +259,24 @@
         <!-- Pricing -->
         <div class="child-w-full bg-teal-500 py-24 mt-24 relative">
           <div
-            class="container text-base md:text-2xl md:pt-18 px-6 mx-auto flex flex-wrap flex-col md:flex-row"
+            class="container text-base md:text-2xl md:pt-18 px-0 md:px-6 mx-auto flex flex-wrap flex-col md:flex-row"
           >
-            <div class="w-1/3 px-4">
-              <div class="border-4 border-black bg-white">
-                <div class="flex justify-between p-4">
-                  <span class="font-black">$99.99</span>
-                  <span class="text-base text-white bg-black p-2 rounded">monthly</span>
+            <div class="w-full md:w-1/3 mt-4 md:mt-0 px-4" v-for="course in courses" :key="course.title">
+              <div class="border-4 border-black bg-white h-full flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between p-4">
+                    <span class="font-black">${{ course.price }}</span>
+                    <!-- <span class="text-base text-white bg-black p-2 rounded">monthly</span> -->
+                  </div>
+
+                  <p class="font-bold mt-2 mb-4 px-4">{{ course.title }}</p>
+
+                  <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
+
+                  <p class="px-4">
+                    {{ course.description }}
+                  </p>
                 </div>
-
-                <p class="font-bold mt-2 mb-4 px-4">Reading Possibilities 1</p>
-
-                <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
-
-                <p class="px-4">
-                  Suitable for Kindergarten (5 years) years) through Year 6 (10 years) Covers
-                  Phonological Awareness, Phonics, Fluency, Vocabulary building and tests comprehension.
-                </p>
-
-                <div class="px-4">
-                  <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-1/3 px-4">
-              <div class="border-4 border-black bg-white">
-                <div class="flex justify-between p-4">
-                  <span class="font-black">$99.99</span>
-                  <span class="text-base text-white bg-black p-2 rounded">monthly</span>
-                </div>
-
-                <p class="font-bold mt-2 mb-4 px-4">Reading Possibilities 2</p>
-
-                <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
-
-                <p class="px-4">
-                  Also works as a booster program. Suitable for Year 6 (10 - 12 years) Focuses on
-                  development of grammar, listening skills, comprehension and word study.
-                </p>
-
-                <div class="px-4">
-                  <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-1/3 px-4">
-              <div class="border-4 border-black bg-white">
-                <div class="flex justify-between p-4">
-                  <span class="font-black">$99.99</span>
-                  <span class="text-base text-white bg-black p-2 rounded">monthly</span>
-                </div>
-
-                <p class="font-bold mt-2 mb-4 px-4">Reading Possibilities 3</p>
-
-                <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
-
-                <p class="px-4">
-                  Suitable for Year 9 (12 years and older even adults) Focuses on speed (eye
-                  movement), fluency, screening and scanning strategies, extensive reading, good for preparing
-                  Standardized tests e.g. SAT, IELTS etc.
-                </p>
 
                 <div class="px-4">
                   <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
@@ -330,18 +286,18 @@
           </div>
 
           <div class="absolute bottom-0 left-0 w-full -mb-8">
-            <div class="container mx-auto px-10">
+            <div class="container mx-auto w-64 md:w-auto md:px-10">
               <button
-                class="bg-pink-600 text-white py-4 px-6 border-4 border-white"
+                class="w-full md:w-auto bg-pink-600 text-white py-4 px-6 border-4 border-white"
               >Proceed to checkout</button>
             </div>
           </div>
         </div>
 
         <!-- Philosophy -->
-        <div class="w-full mt-48" id="philosophy">
+        <div class="w-full mt-24 md:mt-48" id="philosophy">
           <div class="flex items-center">
-            <div class="flex items-center justify-center h-24 w-24 bg-teal-200 rounded-full mr-2">
+            <div class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2">
               <svg class="h-12 w-12 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
@@ -350,13 +306,13 @@
                 />
               </svg>
             </div>
-            <h3 class="text-6xl font-black">Philosophy</h3>
+            <h3 class="text-lg md:text-6xl font-black">Philosophy</h3>
             <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
           </div>
 
-          <div class="flex justify-between mt-16">
+          <div class="flex justify-between flex-wrap mt-8 md:mt-16">
             <div>
-              <h3 class="text-3xl font-bold">Values</h3>
+              <h3 class="text-2xl md:text-3xl font-bold">Values</h3>
               <ul class="mt-4">
                 <li class="flex items-center mb-4">
                   <svg
@@ -417,14 +373,14 @@
               </ul>
             </div>
 
-            <div class="max-w-xl">
-              <h3 class="text-3xl font-bold">Vision</h3>
+            <div class="max-w-xl mt-8 md:mt-0">
+              <h3 class="text-2xl md:text-3xl font-bold">Vision</h3>
               <p class="mb-8">
                 To develop individuals who strive to achieve their highest potential in schools, communities
                 and at home.
               </p>
 
-              <h3 class="text-3xl font-bold">Mission</h3>
+              <h3 class="text-2xl md:text-3xl font-bold">Mission</h3>
               <p class="mb-8">
                 PCS Development Center seeks to help individuals realise their unique possibilities
                 undiscovered.
@@ -434,24 +390,24 @@
         </div>
 
         <!-- About us -->
-        <div class="w-full mt-24" id="contact">
+        <div class="w-full mt-12 md:mt-24" id="contact">
           <div class="flex items-center">
-            <div class="flex items-center justify-center h-24 w-24 bg-teal-200 rounded-full mr-2">
+            <div class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2">
               <svg class="h-12 w-12 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                <path
+             <path
                   d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
                 />
               </svg>
             </div>
-            <h3 class="text-6xl font-black">Contact us</h3>
+            <h3 class="text-lg md:text-6xl font-black">Contact us</h3>
             <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
           </div>
 
-          <div class="flex justify-between mt-16">
+          <div class="flex justify-between flex-wrap mt-8 md:mt-16">
             <div>
               <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Phone Number</h3>+971 555829884
             </div>
-            <address>
+            <address class="mt-8 md:mt-0">
               <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Physical Address</h3>18985 69 Avenue, Surrey
               British Columbia
               Canada
@@ -462,7 +418,7 @@
 
         <!--Footer-->
         <div
-          class="w-full flex justify-between text-gray-700 py-16 -6 text-sm text-center md:text-left fade-in border-t mt-16"
+          class="w-full flex justify-center md:justify-between flex-wrap text-gray-700 py-8 md:py-16 -6 text-sm text-center md:text-left fade-in border-t mt-8 md:mt-16"
         >
           <a
             class="no-underline hover:no-underline"
@@ -474,7 +430,7 @@
             <a
               href="https://progic.co"
               target="_blank"
-              class="text-indigo-600 hover:underline"
+              class="mt-6 md:mt-0 inline-block text-indigo-600 hover:underline"
             >Progic</a>
           </div>
         </div>
@@ -566,112 +522,26 @@ export default {
       ],
       selectedPackages: [],
       shownDescription: null,
-      services: ["Design", "Programming", "Consulting", "Talks", "Trainings"],
 
-      theWhys: [
+      courses: [
         {
-          tag: "Quality",
-          title: "Handcrafted sites & Premium quality",
+          title: "Reading Possibilities 1",
           description:
-            "We put our heart and soul into crafting the perfect site, that will be absolutely stunning to your customers. No knock offs.",
-          logoHTML: `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="text-yellow-brand w-8 h-8 absolute bottom-0 left-0 ml-16 mb-16 z-40"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>`,
+            "Suitable for Kindergarten (5 years) years) through Year 6 (10 years) Covers Phonological Awareness, Phonics, Fluency, Vocabulary building and tests comprehension.",
+          price: 250,
         },
         {
-          tag: "Timely",
-          title: "Quality work delivered, on time",
+          title: "Reading Possibilities 2",
           description:
-            "Technology moves fast! So we race against time to ensure your site is ready before your competitors, all without compromising quality.",
-          logoHTML: `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="text-yellow-brand w-8 h-8 absolute bottom-0 left-0 ml-16 mb-16 z-40"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
+            "Also works as a booster program. Suitable for Year 6 (10 - 12 years) Focuses on development of grammar, listening skills, comprehension and word study.",
+          price: 250,
         },
         {
-          tag: "Value",
-          title: "Value for your money",
+          title: "Reading Possibilities 3",
           description:
-            "Our premium pricing, premium quality. Our promise to you is that you’ll get real value for your money. We throw in a few extras, no cap.",
-          logoHTML: `<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="text-yellow-brand w-8 h-8 absolute bottom-0 left-0 ml-16 mb-16 z-40"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`,
-        },
-      ],
-      frequentlyAskedQuestions: [
-        {
-          title: "How much do your services cost?",
-          description: `
-            It depends!
-
-            Most projects range from  USD $999  to USD $10,000 depending on the complexity and scope of the project. Usually after each project there is a monthly fee of about USD $199 for maintainance and minor updates.
-
-            Any major features to be introduced after wards will be billed as a seperate project and the amount is subject to negotiation. 
-          `,
-        },
-        {
-          title: "How much do your services cost?",
-          description: `
-            It depends!
-
-            Most projects range from  USD $999  to USD $10,000 depending on the complexity and scope of the project. Usually after each project there is a monthly fee of about USD $199 for maintainance and minor updates.
-
-            Any major features to be introduced after wards will be billed as a seperate project and the amount is subject to negotiation. 
-          `,
-        },
-      ],
-
-      plans: [
-        {
-          title: "Website Design",
-          code: "design",
-          description:
-            "Get hand crafted designs for your website. Build it yourself",
-          price: 99,
-          hostingPrice: 0,
-          features: [
-            "Access to original design assets",
-            "Maximum of 2 revisions",
-            "Get mobile and desktop variations",
-          ],
-        },
-        {
-          title: "Basic Websites",
-          code: "basic",
-          description:
-            "Static websites, useful when you are just starting out and just want to bring your brand out there",
-          price: 199,
-          hostingPrice: 9,
-          features: [
-            "5 standard Pages",
-            "Includes design of the website",
-            "Website ready in 2 weeks",
-            "Maximum of 2 revisions",
-          ],
-        },
-        {
-          title: "Rich Websites",
-          code: "rich",
-          description:
-            "Rich interactive websites that allow you to showcase your brand and manage your blog and integrate with social media",
-          price: 699,
-          isMostPopular: true,
-          hostingPrice: 29,
-          features: [
-            "Up to 10 standard Pages",
-            "Includes design of the website",
-            "Website ready in 3 weeks",
-            "Maximum of 2 revisions",
-            "Access to the code repository",
-          ],
-        },
-        {
-          title: "Web Applications",
-          code: "webapp",
-          description:
-            "Custom web applications to fulfill the business needs for your company.",
-          price: 999,
-          hostingPrice: 99,
-          features: [
-            "Agile development",
-            "Custom features",
-            "Prototype ready in 3 weeks",
-            "Access to the code repository",
-          ],
-        },
+            "Suitable for Year 9 (12 years and older even adults) Focuses on speed (eye movement), fluency, screening and scanning strategies, extensive reading, good for preparing Standardized tests e.g. SAT, IELTS etc.",
+          price: 250
+        }
       ],
     };
   },
@@ -889,5 +759,11 @@ button:hover {
 
 .carousel-shell {
   height: 550px;
+}
+
+@media screen and (max-width: 600px){
+  .carousel-shell {
+    height: 250px;
+  }
 }
 </style>
