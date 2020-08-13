@@ -53,29 +53,73 @@
           <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="fatherhood.svg" />
         </div>
 
-        <!-- Quotes -->
+        <!-- New quotes -->
+        <div class="md:-ml-10 p-24l mt-32 flex flex-col justify-cepnter items-center w-full">
+          <div
+            class="max-w-6xl mx-auto relative"
+            x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
+          >
+            <!-- Slides -->
+            <div v-for="slide in slides" :key="slide">
+              <div
+                v-show="activeSlide === slide"
+                class="px-24 py-16 flex flex-col justify-center font-bold text-5xl bg-pink-500 text-white rounded-lg carousel-shell"
+              >
+                <h1 class="text-6xl font-black">"{{ quotes[slide].text }}"</h1>
+                <div class="flex items-center max-w-3xl">
+                  <div class="h-1 bg-white mr-4 flex-1">&nbsp;</div>
+                  <span class="text-3xl font-bold">{{ quotes[slide].author }}</span>
+                </div>
+              </div>
+            </div>
+            <!-- Prev/Next Arrows -->
+            <div class="absolute inset-0 flex">
+              <div class="flex items-center justify-start w-1/2">
+                <button
+                  class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 ml-8"
+                  @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1"
+                >
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-8 h-8">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex items-center justify-end w-1/2">
+                <button
+                  class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-12 h-12 mr-8"
+                  @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1"
+                >
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-8 h-8">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-        <div class="bg-black text-white p-16 mt-24">
-          <h1
-            class="text-6xl font-black"
-          >"Write this down: My life is full of unlimited possibilities."</h1>
-          <div class="flex items-center max-w-3xl">
-            <div class="h-1 bg-white mr-4 flex-1">&nbsp;</div>
-            <span class="text-3xl font-bold">Pablo</span>
-          </div>
-
-          <div class="flex items-center max-w-sm mt-6">
-            <div class="h-4 w-4 bg-white rounded-full mr-2">&nbsp;</div>
-            <div class="h-4 w-4 bg-white rounded-full mr-2">&nbsp;</div>
-            <div class="h-6 w-6 bg-teal-500 border-2 border-white rounded-full mr-2">&nbsp;</div>
-            <div class="h-4 w-4 bg-white rounded-full mr-2">&nbsp;</div>
-            <div class="h-4 w-4 bg-white rounded-full">&nbsp;</div>
-            <div class="h-1 bg-white flex-1">&nbsp;</div>
-            <button
-              class="py-2 px-6 border-2 border-white font-bold text-white text-lg"
-            >next quote -></button>
+            <!-- Buttons -->
+            <div class="absolute w-full flex items-center justify-center px-4">
+              <div v-for="slide in slides" :key="slide">
+                <button
+                  class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
+                  :class="{ 
+                      'bg-orange-600': activeSlide === slide,
+                      'bg-teal-300': activeSlide !== slide 
+                  }"
+                  @click="activeSlide = slide"
+                ></button>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Enf of new quote -->
 
         <!-- About us -->
         <div class="w-full mt-24" id="about-us">
@@ -451,29 +495,33 @@ import { VueMailchimpEmailSignupForm } from "vue-mailchimp-email-signup-form";
 
 export default {
   // <meta charset="UTF-8">
-	// <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	// <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	// <title>Possibilities Cognitive Skills Development Center</title>
-	// <meta name="description" content="">
-	// <meta name="keywords" content="">
-	
-  //   <!-- Font Awesome if you need it
-	// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-	// -->
-	
-	// <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
-	// <!--Replace with your tailwind.css once created-->
+  // <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  // <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  // <title>Possibilities Cognitive Skills Development Center</title>
+  // <meta name="description" content="">
+  // <meta name="keywords" content="">
 
-	// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  //   <!-- Font Awesome if you need it
+  // <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  // -->
+
+  // <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+  // <!--Replace with your tailwind.css once created-->
+
+  // <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   metaInfo: {
     title: "Possibilities Cognitive Skills Development Center",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { charset: "UTF-8" }
+      { charset: "UTF-8" },
     ],
     link: [
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" }
-    ]
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap",
+      },
+    ],
   },
 
   components: {
@@ -483,6 +531,45 @@ export default {
 
   data() {
     return {
+      slides: [0, 1, 2, 3, 4, 5],
+      activeSlide: 0,
+      quotes: [
+        {
+          text: "Write this down: My life is full of unlimited possibilities.",
+          author: "Pablo",
+        },
+        {
+          text: "Explore the possibilities; Transformation happens anywhere.",
+          author: "Ayubakhan U",
+        },
+        {
+          text:
+            "So many things are possible as long as you know they are impossible.",
+          author: "Mildred D. Taylor",
+        },
+        {
+          text: "It's the possibility that keeps me going, not the guarantee.",
+          author: "Nicholas Sparks",
+        },
+        {
+          text: "All things are possible until they are proven impossible.",
+          author: "Pearl S. Buck",
+        },
+        {
+          text:
+            "There is a thin line between the impossible and the possible that is determination.",
+          author: "Ogwo David Emenike",
+        },
+        {
+          text: "Every new day begins with possibilities.",
+          author: "Ronald Reagan",
+        },
+        {
+          text:
+            "Life is about the richness of the infinite possibilities. Just by you being unique contributes to the TRUE beauty of the world we live in.",
+          author: "Embellished Minds",
+        },
+      ],
       selectedPackages: [],
       shownDescription: null,
       services: ["Design", "Programming", "Consulting", "Talks", "Trainings"],
@@ -616,33 +703,197 @@ export default {
 </script>
 
 
-<style>		
-    /* ----------------------------------------------
+<style>
+/* ----------------------------------------------
     * Generated by Animista
     * w: http://animista.net, t: @cssanimista
     * ---------------------------------------------- */
-    
-  .slide-in-bottom{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
-  .slide-in-bottom-h1{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .5s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .5s both}
-  .slide-in-bottom-subtitle{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .75s both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) .75s both}
-  .fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) 1s both}
-  .bounce-top-icons{-webkit-animation:bounce-top .9s 1s both;animation:bounce-top .9s 1s both}
-  
-  @-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-  @-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
-  @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
-  
-  .child-w-full {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-  }
 
-  button {
-    transition: all .2s ease-in;
-  }
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-in-bottom-h1 {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    0.5s both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+.slide-in-bottom-subtitle {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    0.75s both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s
+    both;
+}
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+}
+.bounce-top-icons {
+  -webkit-animation: bounce-top 0.9s 1s both;
+  animation: bounce-top 0.9s 1s both;
+}
 
-  button:hover {
-    transform: translateY(-8px) translateX(-4px) scale(1.03);
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
   }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.child-w-full {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+button {
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  transform: translateY(-8px) translateX(-4px) scale(1.03);
+}
+
+.carousel-shell {
+  height: 550px;
+}
 </style>
