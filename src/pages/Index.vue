@@ -1,27 +1,41 @@
 <template>
   <Layout>
     <div class="min-h-screen pb-14 bg-right bg-cover">
-
       <div class="bg-teal-100 p-6 border-b-2 border-teal-500 text-base md:text-lg">
-      <nav class="container mx-auto flex items-center justify-between flex-wrap">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <img src="logo.svg" class="h-16" />
-        </div>
-      
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="hidden md:block font-bold lg:flex-grow">
-            <a href="#about-us" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">About Us</a>
-
-            <a href="#how-it-works" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">How it works</a>
-
-            <a href="#programs" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">Our programs</a>
-
-            <a href="#philosophy" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8">Philosophy</a>
-
-            <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline">Contact Us</a>
+        <nav class="container mx-auto flex items-center justify-between flex-wrap">
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <img src="logo.svg" class="h-16" />
           </div>
-        </div>
-      </nav>
+
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="hidden md:block font-bold lg:flex-grow">
+              <a
+                href="#about-us"
+                class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8"
+              >About Us</a>
+
+              <a
+                href="#how-it-works"
+                class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8"
+              >How it works</a>
+
+              <a
+                href="#programs"
+                class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8"
+              >Our programs</a>
+
+              <a
+                href="#philosophy"
+                class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline mr-8"
+              >Philosophy</a>
+
+              <a
+                href="#contact"
+                class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline"
+              >Contact Us</a>
+            </div>
+          </div>
+        </nav>
       </div>
 
       <!--Main-->
@@ -29,7 +43,7 @@
         class="container pt-8 text-base md:text-2xl md:pt-18 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
       >
         <!--Left Col-->
-        <div class="flex flex-col  w-full xl:w-3/5 justify-center lg:items-start">
+        <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start">
           <h1
             class="my-4 text-3xl md:text-6xl text-teal-800 font-black leading-tight text-center md:text-left slide-in-bottom-h1"
           >Possibilities Cognitive Skills Development Center</h1>
@@ -43,12 +57,14 @@
         </div>
 
         <!--Right Col-->
-        <div class="w-full xl:w-2/5 py-6 overflow-y-hidden bg-red -mt-16  md:mt-auto">
+        <div class="w-full xl:w-2/5 py-6 overflow-y-hidden bg-red -mt-16 md:mt-auto">
           <img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="fatherhood.svg" />
         </div>
 
         <!-- New quotes -->
-        <div class="md:-ml-10 p-24l mt-16 md:mt-32 flex flex-col justify-cepnter items-center w-full">
+        <div
+          class="md:-ml-10 p-24l mt-16 md:mt-32 flex flex-col justify-cepnter items-center w-full"
+        >
           <div
             class="max-w-6xl mx-auto relative"
             x-data="{ activeSlide: 1, slides: [1, 2, 3, 4, 5] }"
@@ -73,7 +89,11 @@
                   class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-6 md:w-12 h-6 md:h-12 ml-2 md:ml-8"
                   @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1"
                 >
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-4 md:w-8 h-4 md:h-8">
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="chevron-left w-4 md:w-8 h-4 md:h-8"
+                  >
                     <path
                       fill-rule="evenodd"
                       d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -87,7 +107,11 @@
                   class="flex items-center justify-between border-border-teal-700 shadow bg-white text-teal-500 hover:text-orange-500 font-bold hover:shadow-lg rounded-full w-6 md:w-12 h-6 md:h-12 mr-2 md:mr-8"
                   @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1"
                 >
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-4 md:w-8 h-4 md:h-8">
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="chevron-right w-4 md:w-8 h-4 md:h-8"
+                  >
                     <path
                       fill-rule="evenodd"
                       d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -118,7 +142,9 @@
         <!-- About us -->
         <div class="w-full mt-12 md:mt-24" id="about-us">
           <div class="flex items-center">
-            <div class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2">
+            <div
+              class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2"
+            >
               <svg
                 class="w-6 h-6 md:h-12 md:w-12 text-teal-500"
                 fill="none"
@@ -137,7 +163,9 @@
             <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
           </div>
 
-          <div class="flex items-center justify-between flex-wrap mt-6 border-b-4 border-black pb-16 mb-16">
+          <div
+            class="flex items-center justify-between flex-wrap mt-6 border-b-4 border-black pb-16 mb-16"
+          >
             <div class="w-full md:w-1/2 md:pr-16">
               <p
                 class="mb-6"
@@ -227,7 +255,9 @@
             <button class="bg-teal-600 text-white py-4 px-6 mt-6">Register for an assessment</button>
           </div>
 
-          <div class="mt-8 md:mt-0 border-4 border-black bg-teal-100 p-8 flex flex-col justify-between max-w-xl">
+          <div
+            class="mt-8 md:mt-0 border-4 border-black bg-teal-100 p-8 flex flex-col justify-between max-w-xl"
+          >
             <p>Our training is Diagnostic, individual and developmental. Our trainers are qualified and experienced to deliver timely, systematic and effective interventions.</p>
 
             <p>All our programs are research based and international.</p>
@@ -261,7 +291,11 @@
           <div
             class="container text-base md:text-2xl md:pt-18 px-0 md:px-6 mx-auto flex flex-wrap flex-col md:flex-row"
           >
-            <div class="w-full md:w-1/3 mt-4 md:mt-0 px-4" v-for="course in courses" :key="course.title">
+            <div
+              class="w-full md:w-1/3 mt-4 md:mt-0 px-4"
+              v-for="course in courses"
+              :key="course.title"
+            >
               <div class="border-4 border-black bg-white h-full flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between p-4">
@@ -273,31 +307,226 @@
 
                   <div class="w-24 h-1 bg-black mb-6">&nbsp;</div>
 
-                  <p class="px-4">
-                    {{ course.description }}
-                  </p>
+                  <p class="px-4">{{ course.description }}</p>
                 </div>
 
                 <div class="px-4">
-                  <button class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full">Add to cart</button>
+                  <button
+                    class="bg-black text-white py-4 px-6 mt-6 mb-4 w-full"
+                    v-if="!presentInCart(course)"
+                    @click="addToCart(course)"
+                  >Add to cart</button>
+                  <div
+                    class="flex text-base items-center justify-between py-4 mt-6 border-t"
+                    v-else
+                  >
+                    Added to cart
+                    <button
+                      class="text-orange-600 hover:underline"
+                      @click="removeFromCart(course)"
+                    >Remove from cart</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div
+          v-if="selectedPackages.length > 0"
+          class="absolutel bottom-0 left-0 w-full -mt-10 z-30"
+        >
+          <div class="container mx-auto md:w-auto md:px-10">
+            <div class="p-4 md:p-8 bg-white border-2 shadow-lg rounded">
+              <form v-show="!hasAccountBeenCreated" @submit.prevent="saveAccount">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-full border-4 border-teal-500 text-teal-500 font-bold"
+                  >1</div>
+                  <div class="ml-4 h-1 flex-1 bg-teal-500"></div>
+                </div>
+                <h3 class="text-3xl font-black mb-8">Enter your details</h3>
+                <h4 class="text-2xl font-bold mb-4">Parent details</h4>
+                <div class="flex flex-wrap mb-4 -mx-2 pb-4 mb-4 border-b-2 border-gray-600">
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Name</label>
+                    <input v-model="account.name" name="name" type="text" class="form-input w-full" />
+                  </div>
 
-          <div class="absolute bottom-0 left-0 w-full -mb-8">
-            <div class="container mx-auto w-64 md:w-auto md:px-10">
-              <button
-                class="w-full md:w-auto bg-pink-600 text-white py-4 px-6 border-4 border-white"
-              >Proceed to checkout</button>
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Email</label>
+                    <input v-model="account.email" name="email" type="email" class="form-input w-full" />
+                  </div>
+
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Phone</label>
+                    <input v-model="account.phoneNumber" name="phone" type="tel" class="form-input w-full" />
+                  </div>
+                </div>
+
+                <h4 class="text-2xl font-bold mb-4">Children Details</h4>
+
+                <div class="flex flex-wrap mb-4 -mx-2 pb-4 mb-4 border-b-2 border-gray-600">
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Name</label>
+                    <input v-model="tempChild.name" name="child_name" type="text" class="form-input w-full" />
+                  </div>
+
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Grade</label>
+                    <input v-model="tempChild.grade" name="child_grade" type="text" class="form-input w-full" />
+                  </div>
+
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Age (years)</label>
+                    <input v-model="tempChild.age" name="child_age" type="number" class="form-input w-full" />
+                  </div>
+                  <div class="field px-2 md:flex-1">
+                    <label class="block">Course</label>
+                    <div class="relative">
+                      <select
+                        v-model="tempChild.course"
+                        class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-state"
+                      >
+                        <option
+                          v-for="course in selectedPackages"
+                          :key="course.id"
+                          :value="course.id"
+                        >{{ course.title }}</option>
+                      </select>
+                      <div
+                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                      >
+                        <svg
+                          class="fill-current h-4 w-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full py-4 px-2">
+                    <span class="block text-red-500 text-base -mt-4 mb-6">{{ childValidationMessage }}</span>
+                    <a
+                      href="#"
+                      type="button"
+                      class="px-4 py-2 border border-teal-500 text-teal-600 text-base hover:underline"
+                      @click="addChild"
+                    >Add child</a>
+                  </div>
+
+                  <table v-if="account.children.length > 0" class="text-base">
+                    <thead>
+                      <tr>
+                        <th class="text-left px-4 py-2 border-b border-black">Name</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Grade</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Age</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Course</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr v-for="child in account.children" :key="child.name">
+                        <td class="px-4 py-2">{{ child.name }}</td>
+                        <td class="px-4 py-2">{{ child.grade }}</td>
+                        <td class="px-4 py-2">{{ child.age }}</td>
+                        <td class="px-4 py-2">{{ getCourseName(child.course) }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button
+                  v-if="account.children.length > 0 && !isLoading && !hasAccountBeenCreated"
+                  class="bg-teal-600 text-white py-4 px-6"
+                >Create Account</button>
+              </form>
+              <!-- :on-cancel="onCancel" -->
+              <!-- :can-cancel="true"  -->
+              <div class="vld-parent">
+                <loading :active.sync="isLoading" :is-full-page="true"></loading>
+              </div>
+              <div v-if="hasAccountBeenCreated && !showThankYou">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-full border-4 border-teal-500 text-teal-500 font-bold"
+                  >2</div>
+                  <div class="ml-4 h-1 flex-1 bg-teal-500"></div>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Payment Details</h4>
+
+                <div>
+                  <h4 class="text-lg font-bold mb-4">Summary</h4>
+
+                  <table class="text-base mb-6">
+                    <thead>
+                      <tr>
+                        <th class="text-left px-4 py-2 border-b border-black">Name</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Grade</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Age</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Course</th>
+                        <th class="text-left px-4 py-2 border-b border-black">Price</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr v-for="child in account.children" :key="child.name">
+                        <td class="px-4 py-2">{{ child.name }}</td>
+                        <td class="px-4 py-2">{{ child.grade }}</td>
+                        <td class="px-4 py-2">{{ child.age }}</td>
+                        <td class="px-4 py-2">{{ getCourseName(child.course) }}</td>
+                        <td class="px-4 py-2">{{ getCoursePrice(child.course) }}</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" class="text-left px-4 py-2 border-t border-b border-black">Total</td>
+                        <td colspan="4" class="text-left px-4 py-2 border-t border-b border-black">${{calculateTotalPrice()}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div id="paypal-button-container" class="max-w-lg"></div>
+
+              <div v-if="showThankYou">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-full border-4 border-teal-500 text-teal-500 font-bold"
+                  >3</div>
+                  <div class="ml-4 h-1 flex-1 bg-teal-500"></div>
+                </div>
+                <h4 class="text-3xl font-black mb-4">Success</h4>
+                <p>Thank you for purchasing our courses. We will email you with further instructions</p>
+              </div>
+
+              <div v-if="showError">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-full border-4 border-teal-500 text-teal-500 font-bold"
+                  >3</div>
+                  <div class="ml-4 h-1 flex-1 bg-teal-500"></div>
+                </div>
+                <h4 class="text-3xl font-black mb-4">Error</h4>
+                <p>Sorry we could not register you for any of our courses. May you please refresh your browser to try again.</p>
+              </div>
             </div>
+            <!-- <button
+                class="w-full md:w-auto bg-pink-600 text-white py-4 px-6 border-4 border-white"
+            >Proceed to checkout</button>-->
           </div>
         </div>
 
         <!-- Philosophy -->
         <div class="w-full mt-24 md:mt-48" id="philosophy">
           <div class="flex items-center">
-            <div class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2">
+            <div
+              class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2"
+            >
               <svg class="h-12 w-12 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
@@ -392,9 +621,11 @@
         <!-- About us -->
         <div class="w-full mt-12 md:mt-24" id="contact">
           <div class="flex items-center">
-            <div class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2">
+            <div
+              class="flex items-center justify-center h-16 w-16 md:h-24 md:w-24 bg-teal-200 rounded-full mr-2"
+            >
               <svg class="h-12 w-12 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-             <path
+                <path
                   d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
                 />
               </svg>
@@ -442,7 +673,11 @@
 <script>
 import Accordion from "@/components/Accordion";
 import { VueMailchimpEmailSignupForm } from "vue-mailchimp-email-signup-form";
-
+import axios from "axios";
+// Import component
+import Loading from "vue-loading-overlay";
+// Import stylesheet
+import "vue-loading-overlay/dist/vue-loading.css";
 export default {
   // <meta charset="UTF-8">
   // <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -472,15 +707,30 @@ export default {
           "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap",
       },
     ],
+    script: [
+      {
+        src:
+          "https://www.paypal.com/sdk/js?client-id=Ac9TJIUAI-9AwXrlh58z1Vw5-i-xrSMA5X0AzKlB2eXgIVXqF-z-Q6bVlm9zEfLMDaOV05thFaQv8fHa&currency=USD",
+        "data-sdk-integration-source": "button-factory",
+      },
+    ],
   },
 
   components: {
     Accordion,
     VueMailchimpEmailSignupForm,
+    Loading,
   },
+
+  mounted() {},
 
   data() {
     return {
+      isLoading: false,
+      hasAccountBeenCreated: false,
+      showThankYou: false,
+      showError: false,
+      childValidationMessage: "",
       slides: [0, 1, 2, 3, 4, 5],
       activeSlide: 0,
       quotes: [
@@ -525,24 +775,51 @@ export default {
 
       courses: [
         {
+          id: "5f3b3855ac1e6fe85e2def52",
           title: "Reading Possibilities 1",
           description:
             "Suitable for Kindergarten (5 years) years) through Year 6 (10 years) Covers Phonological Awareness, Phonics, Fluency, Vocabulary building and tests comprehension.",
           price: 250,
         },
         {
+          id: "5f3b387cac1e6fe85e2dfba0",
           title: "Reading Possibilities 2",
           description:
             "Also works as a booster program. Suitable for Year 6 (10 - 12 years) Focuses on development of grammar, listening skills, comprehension and word study.",
           price: 250,
         },
         {
+          id: "5f3b389fac1e6fe85e2e07eb",
           title: "Reading Possibilities 3",
           description:
             "Suitable for Year 9 (12 years and older even adults) Focuses on speed (eye movement), fluency, screening and scanning strategies, extensive reading, good for preparing Standardized tests e.g. SAT, IELTS etc.",
-          price: 250
-        }
+          price: 250,
+        },
       ],
+      account: {
+        name: "",
+        phoneNumber: "",
+        email: "",
+        children: [
+          // {
+          //   name: "",
+          //   grade: "6",
+          // },
+        ],
+        courses: [
+          // "5f3afe8b3a3a030007883674"
+        ],
+        transation_details: [],
+      },
+
+      tempChild: {
+        name: "",
+        age: "",
+        grade: "",
+        course: "",
+      },
+
+      selectedCourses: [],
     };
   },
 
@@ -561,6 +838,177 @@ export default {
       } else {
         this.selectedPackages.push(pkg);
       }
+    },
+
+    saveAccount() {
+      console.log("saving account");
+      this.isLoading = true;
+      console.log({ account: this.account });
+      this.account.courses = this.selectedPackages.map((p) => p.id);
+      axios
+        .post(
+          "https://possibilitiescognitiveskills.vercel.app/api/accounts",
+          this.account
+        )
+        .then((data) => {
+          // time to make a payment
+          this.hasAccountBeenCreated = true;
+
+          const accountId = data.data.account.insertedIds[0];
+          this.initPaypal(accountId);
+        })
+        .catch(() =>
+          console.log(
+            "There was an error that stopped me from saving your account"
+          )
+        )
+        .finally(() => (this.isLoading = false));
+    },
+
+    addChild() {
+      console.log("adding user");
+      this.childValidationMessage = ''
+
+      if (this.tempChild.name == '') {
+        this.childValidationMessage = "You did not type in the child's name"
+        return
+      }
+      if (this.tempChild.grade == '') {
+        this.childValidationMessage = "It seems like the child's grade is missing"
+        return
+      }
+      if (this.tempChild.age == '') {
+        this.childValidationMessage = "The age field is required"
+        return
+      }
+      if (this.tempChild.course == '') {
+        this.childValidationMessage = "You did not select the course"
+        return
+      }
+      this.account.children.push(Object.assign({}, this.tempChild));
+      this.tempChild.name = "";
+      this.tempChild.grade = "";
+      this.tempChild.age = "";
+      this.tempChild.course = "";
+    },
+
+    presentInCart(course) {
+      return (
+        this.selectedPackages.map((p) => p.title).indexOf(course.title) > -1
+      );
+    },
+    addToCart(course) {
+      this.selectedPackages.push(course);
+    },
+    removeFromCart(course) {
+      if (this.presentInCart) {
+        this.selectedPackages.splice(
+          this.selectedPackages.map((p) => p.title).indexOf(course.title),
+          1
+        );
+      }
+    },
+
+    getCoursePrice(courseId) {
+      const course = this.courses.find((c) => c.id == courseId);
+      if (course) return course.price;
+      return 0;
+    },
+
+    getCourseName(courseId) {
+      const course = this.courses.find((c) => c.id == courseId);
+      if (course) return course.title;
+      return "cant find";
+    },
+
+    calculateTotalPrice() {
+      return this.account.children.reduce(
+        (tot, curr) => (tot += this.getCoursePrice(curr.course)),
+        0
+      );
+    },
+
+    initPaypal(accountId) {
+      console.log("initializing paypal with id", accountId);
+      const _this = this;
+      paypal
+        .Buttons({
+          style: {
+            shape: "rect",
+            color: "gold",
+            layout: "vertical",
+            label: "paypal",
+          },
+          createOrder: function (data, actions) {
+            const purchase_units = {
+              description:
+                "Buying courses from possibilitiescognitiveskills.com",
+              amount: {
+                value: _this.account.children.reduce(
+                  (tot, curr) => (tot += _this.getCoursePrice(curr.course)),
+                  0
+                ),
+                currency_code: "USD",
+                breakdown: {
+                  item_total: {
+                    value: _this.account.children.reduce(
+                      (tot, curr) => (tot += _this.getCoursePrice(curr.course)),
+                      0
+                    ),
+                    currency_code: "USD",
+                  },
+                  tax_total: { currency_code: "USD", value: "0.00" },
+                },
+              },
+              items: _this.account.children.map((child) => {
+                return {
+                  name: `${_this.getCourseName(child.course)} - ${child.name}`,
+                  quantity: 1,
+                  unit_amount: {
+                    value: _this.getCoursePrice(child.course),
+                    currency_code: "USD",
+                  },
+                };
+              }),
+            };
+            return actions.order.create({
+              purchase_units: [purchase_units],
+            });
+          },
+          onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+              console.log(
+                "Transaction completed by " +
+                  details.payer.name.given_name +
+                  "!"
+              );
+              _this.isLoading = true;
+              // this.account.transation_details.push(details)
+              axios
+                .put(
+                  "https://possibilitiescognitiveskills.vercel.app/api/accounts",
+                  {
+                    id: accountId,
+                    transaction_details: details,
+                  }
+                )
+                .then(() =>
+                  console.log("successfully updated your new account")
+                )
+                .catch(() => {
+                  _this.showError = true;
+                  console.log("error updating your new account");
+                })
+                .finally(() => {
+                  _this.isLoading = false;
+                  _this.showThankYou = true;
+                  document.querySelector("#paypal-button-container").innerHTML =
+                    "";
+                });
+            });
+          },
+        })
+        .render("#paypal-button-container");
     },
   },
 };
@@ -761,7 +1209,7 @@ button:hover {
   height: 550px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .carousel-shell {
     height: 250px;
   }
