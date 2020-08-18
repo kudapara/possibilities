@@ -710,7 +710,7 @@ export default {
     script: [
       {
         src:
-          "https://www.paypal.com/sdk/js?client-id=Ac9TJIUAI-9AwXrlh58z1Vw5-i-xrSMA5X0AzKlB2eXgIVXqF-z-Q6bVlm9zEfLMDaOV05thFaQv8fHa&currency=USD",
+          "https://www.paypal.com/sdk/js?client-id=AUDh9Xb_zBYtbL8wfZmUVmBJUa-oYdPs4PdT93lFPtxJb4rvWRf-ggBj1kxAybYn5Xg-iy_7PIjOylY1&currency=USD",
         "data-sdk-integration-source": "button-factory",
       },
     ],
