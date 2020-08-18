@@ -11,7 +11,9 @@ const postcssPlugins = [
 	tailwindcss(),
 ]
 
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss({
+  whitelist: ['vld-parent']
+}))
 
 module.exports = {
   siteName: 'Kudakwashe Paradzayi',
