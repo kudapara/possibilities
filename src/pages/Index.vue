@@ -52,7 +52,7 @@
           >We believe that cognitive skills training is about excercing the brain to think faster and learn easily.</p>
 
           <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
-            <button class="bg-teal-600 text-white py-4 px-6">Register for an assessment</button>
+            <a href="#register" class="inline-block bg-teal-600 text-white py-4 px-6">Register for an assessment</a>
           </div>
         </div>
 
@@ -287,7 +287,7 @@
         </div>
 
         <!-- Pricing -->
-        <div class="child-w-full bg-teal-500 py-24 mt-24 relative">
+        <div class="child-w-full bg-teal-500 py-24 mt-24 relative" id="register">
           <div
             class="container text-base md:text-2xl md:pt-18 px-0 md:px-6 mx-auto flex flex-wrap flex-col md:flex-row"
           >

@@ -14,7 +14,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Kudakwashe Paradzayi',
+  siteName: 'Possibilites Congnitive Skills',
   plugins: [],
   css: {
     loaderOptions: {
