@@ -757,7 +757,7 @@ export default {
         },
         {
           text:
-            "So many things are possible as long as you know they are impossible.",
+            "So many things are possible as long as you don't know they are impossible.",
           author: "Mildred D. Taylor",
         },
         {
