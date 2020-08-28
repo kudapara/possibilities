@@ -34,6 +34,19 @@
                 class="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-600 hover-underline"
               >Contact Us</a>
             </div>
+
+            <div class="relative group">
+                <a href="#" class="mt-4 md:mt-0 border-2 border-teal-600 text-teal-600 py-1 px-6 no-underline text-back md:text-blue-dark flex items-center justify-center">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="user-circle w-6 h-6 mr-2"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path></svg>
+                    Login
+                </a>
+
+                <div class="items-center absolute border border-t-0 rounded-b-lg p-1 bg-white p-2 invisible group-hover:visible w-auto">
+                    <a href="https://www.lexiacore5.com/register" class="border-b hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Possibilities 1</a>
+                    <a href="https://www.lexiapowerup.com/" class="border-b hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Possibilities 2</a>
+                    <a href="https://student.readingplus.com/seereader/api/sec/login" class=" hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Possibilities 3</a>
+                </div>
+            </div>
           </div>
         </nav>
       </div>
@@ -180,7 +193,7 @@
                   <p class="text-gray-200 text-base mb-6">Founder and CEO</p>
                   <p
                     class="mb-2"
-                  >Esther Moyo majored in Clinical Psychology and has been working with children since 2011.</p>
+                  >The Founder and CEO majored in Clinical Psychology and has been working with children since 2011.</p>
                   <p
                     class="mb-2"
                   >Her experience ranges from being a Denominational Conference Children's Ministries Director, Certified Brain Trainer as well as a Student Counselor in International Schools in the Middle East.</p>
@@ -719,7 +732,7 @@ export default {
   components: {
     Accordion,
     VueMailchimpEmailSignupForm,
-    Loading,
+    Loading
   },
 
   mounted() {},
