@@ -45,6 +45,7 @@
                     <a href="https://www.lexiacore5.com/register" class="border-b hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Possibilities 1</a>
                     <a href="https://www.lexiapowerup.com/" class="border-b hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Possibilities 2</a>
                     <a href="https://student.readingplus.com/seereader/api/sec/login" class=" hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Possibilities 3</a>
+                    <a href="https://content.symphonylearning.com/assets/student/index.html?v=latest" class=" hover:bg-gray-200 whitespace-no-wrap px-4 py-2 block text-black hover:bg-grey-lighter">Math Program</a>
                 </div>
             </div>
           </div>
