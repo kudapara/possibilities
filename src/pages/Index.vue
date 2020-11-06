@@ -313,7 +313,7 @@
               <div class="border-4 border-black bg-white h-full flex flex-col justify-between">
                 <div>
                   <div class="flex justify-between p-4">
-                    <span class="font-black">${{ course.price }}</span>
+                    <span class="font-black">USD${{ course.price }}</span>
                     <!-- <span class="text-base text-white bg-black p-2 rounded">monthly</span> -->
                   </div>
 
