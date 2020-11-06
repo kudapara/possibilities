@@ -62,7 +62,7 @@
           >Possibilities Cognitive Skills Development Center</h1>
           <p
             class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle"
-          >We believe that cognitive skills training is about excercing the brain to think faster and learn easily.</p>
+          >We believe that cognitive skills training is about exercising the brain to think faster and learn easily.</p>
 
           <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
             <a href="#register" class="inline-block bg-teal-600 text-white py-4 px-6">Register for an assessment</a>
