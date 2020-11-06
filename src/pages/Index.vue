@@ -306,7 +306,7 @@
             class="container text-base md:text-2xl md:pt-18 px-0 md:px-6 mx-auto flex flex-wrap flex-col md:flex-row"
           >
             <div
-              class="w-full md:w-1/3 mt-4 md:mt-0 px-4"
+              class="w-full md:w-1/3 mt-4 md:mt-0 p-4"
               v-for="course in courses"
               :key="course.title"
             >
@@ -808,6 +808,13 @@ export default {
           description:
             "Suitable for Year 9 (12 years and older even adults) Focuses on speed (eye movement), fluency, screening and scanning strategies, extensive reading, good for preparing Standardized tests e.g. SAT, IELTS etc.",
           price: 250,
+        },
+        {
+          id: "5fa52ec5c543d757a0597173",
+          title: "Math Program",
+          description:
+            "Our Math program is web based and is suitable for students of all abilities from Pre K (4 years) to Year 8 (14 years). The Math program is diagnostic, individualized and developmental. It is visual with a high intuitive interface. Throughout the program, students are constantly challenged to demonstrate their mastery by constructing models, building number sequences from story problems.",
+          price: 200,
         },
       ],
       account: {
