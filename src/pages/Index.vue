@@ -649,9 +649,15 @@
             <div class="h-2 bg-black ml-4 flex-1">&nbsp;</div>
           </div>
 
-          <div class="flex justify-between flex-wrap mt-8 md:mt-16">
+          <div class="flex justify-between items-start flex-wrap mt-8 md:mt-16">
             <div>
-              <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Phone Number</h3>+971 555829884
+              <div class="mb-6">
+                <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Phone Number</h3>+971 555829884
+              </div>
+              
+              <div>
+                <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Email Address</h3><a href="mailto:info@possibilitiescognitiveskills.com">info@possibilitiescognitiveskills.com</a>
+              </div>
             </div>
             <address class="mt-8 md:mt-0">
               <h3 class="text-base uppercase tracking-wide text-gray-700 mb-2">Physical Address</h3>18985 69 Avenue, Surrey
